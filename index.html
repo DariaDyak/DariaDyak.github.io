@@ -136,9 +136,12 @@
 <input type="text" name ="email"id="email" placeholder="поле e-mail">
 <h4> дата рождения: </h4>
 <input type="date" name="date-picker" id="date-picker">
-<h4> биография: </h4>
-<textarea name="comment" cols="35"></textarea>
-<h4> список с множественным выбором: </h4>
+    <h4> Пол: </h4>
+<input type="radio" name="radio-group" id="radio1" value="option1">
+<label for="radio1">Ж</label>
+<input type="radio" name="radio-group" id="radio2" value="option2">
+<label for="radio2">М</label>
+    <h4> Любимый язык программирования: </h4>
     <select name="" multiple>
         <option value="Pascal">Pascal</option>
         <option value="C">C</option>
@@ -151,13 +154,11 @@
         <option value="Scala">Scala</option>
         <option value="Clojure">Clojure</option>
       </select>
-<h4> выбор пола: </h4>
-<input type="radio" name="radio-group" id="radio1" value="option1">
-<label for="radio1">Ж</label>
-<input type="radio" name="radio-group" id="radio2" value="option2">
-<label for="radio2">М</label>
-<h4> чекбокс: </h4>
+
+<h4> Биография: </h4>
+<textarea name="comment" cols="35"></textarea>
+<h4> Чекбокс: </h4>
     <input type="checkbox" id="Checkbox">
     <label for="Checkbox">C контрактом ознакомлен(а)</label>
-<p>кнопка сохранения</p>>
+<h4>Кнопка сохранить</h4>
 <button  type ="submit "> Сохранить </button >
