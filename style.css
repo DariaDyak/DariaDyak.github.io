@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+  }
+  
+  header {
+    background-color: #ccc;
+    padding: 10px;
+    height: 120px;
+    text-align: center;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .menu a {
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .name {
+    background-color: rgba(204, 204, 204, 0.63);
+    padding: 10px;
+  }
+  
+  .content {
+    max-width: 800px;
+    background-color: #cccccc;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e5e5e5;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #d1d1d1;
+  }
