@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Zadanie 3</title>
-    <style>
+        <style>
 #main-aside-wrapper {
   flex-direction: row; /*строки слева направо*/
   display: flex; /*для блокового отображения*/
@@ -14,12 +14,49 @@
   padding: 20px;
 }
 #main-aside-wrapper aside {
-  flex: 1;
-  order: 1;/*порядок*/
+  flex: 0;
+  order: 1;/*порядок блоков*/
+  flex-wrap: wrap;
 }
 #main-aside-wrapper main {
-  flex: 2;
+  flex: 1;
   order: 2;
+}
+footer {
+    background-color: #ccc;
+    height: 25px;
+    padding: 10px;
+    text-align: left;
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  th {
+      font-size: 16px;
+      text-align: center;
+      background-color: #cd98ed;
+      color: #000000;
+    }
+  
+  tr:nth-child(even) {
+    font-size: 16px;
+    text-align: center;
+    background-color: #ae9afa;
+    color: #000000;
+  }
+  
+  tr:nth-child(odd) {
+    font-size: 16px;
+    text-align: center;
+    background-color: #c5b5ff;
+    color: #000000;
+  }
+@media screen and (min-width: 800px) {
+  #main-aside-wrapper {
+    flex-direction: row;
+  }
 }
    </style>
   </head>
@@ -34,7 +71,72 @@
 
 
     <div id="main-aside-wrapper">
+      
       <main>
+        
+  <table id="table">
+<h2>Table</h2>
+
+          <tr>
+            <th>Наименование</th>
+            <th>Сорт</th>
+            <th>Ед.изм.</th>
+            <th>Характеристика</th>
+            <th>Комментарии</th>
+          </tr>
+          <tr>
+            <td colspan="5">Общая номенклатура</td>
+          </tr>
+          <tr>
+            <td>Вагонка европрофиль сосна.ель</td>
+            <td>А</td>
+            <td>м3</td>
+            <td>В12,5xШ96</td>
+            <td>Допуск по длине +/-5см</td>
+
+          </tr>
+          <tr>
+            <td>Вагонка европрофиль сосна.ель</td>
+            <td>Прайм</td>
+            <td>м3</td>
+            <td>В12,5xШ96</td>
+            <td>Допуск по длине +/-5см</td>
+          </tr>
+          <tr>
+            <td colspan="5">Новый стиль</td>
+            </tr>
+          <tr>
+            <td>Вагонка европрофиль сосна.ель</td>
+            <td>В</td>
+            <td>м3</td>
+            <td>В12,5xШ96</td>
+            <td>Допуск по длине +/-5см</td>
+          </tr>
+          <tr>
+            <td>Вагонка липа</td>
+            <td>Э</td>
+            <td>м3</td>
+            <td>В15xШ98хД1800</td>
+            <td>Допуск по длине +/-5см</td>
+          </tr>
+          
+          <tr>
+            <td>Вагонка ольха</td>
+            <td>С</td>
+            <td>м3</td>
+            <td>В16xШ99хД1800</td>
+            <td>Допуск по длине +/-5см</td>
+          </tr>
+          <tr>
+            <td>Вагонка ольха2</td>
+            <td>Е</td>
+            <td>м3</td>
+            <td>В16xШ99хД1900</td>
+            <td>Допуск по длине +/-5см</td>
+          </tr>
+        
+</table>
+<h2>Гиперссылки</h2>
           <ul>
             <li>
               <a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу КубГу(1)</a>
@@ -119,15 +221,50 @@
             </ol>
             </li>
             </ul>
-        <p>Вторая строка</p>
-      </main>
+            
+            <h2>Форма HTML</h2>
+            <label>ФИО:<br/>
+            <textarea>текстовое поле </textarea ></label> <br/>
+            <label> Телефон:<br/>
+            <label><input type="text" name="tel" id="tel" placeholder="поле tel"></br>
+            <label>Поле e-mail:<br/>
+            <input type="text" name ="email"id="email" placeholder="поле e-mail"></label></br>
+            <label>Дата рождения:<br/>
+            <input type="date" name="date-picker" id="date-picker"></label></br>
+            <label>Пол:<br/>
+            <input type="radio" name="radio-group" id="radio1" value="option1">
+            <label for="radio1">Ж<br/>
+            <input type="radio" name="radio-group" id="radio2" value="option2">
+            <label for="radio2">М<br/>
+            <label>Любимый язык программирования: <br/>
+                <select name="" multiple>
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                    <option value="Clojure">Clojure</option>
+                  </select></label><br/>
+            <label> Биография: <br/>
+            <textarea name="comment" cols="35"></textarea></label><br/>
+                <label>Чекбокс:<br/>
+                <input type="checkbox" id="Checkbox">
+                <label for="Checkbox">C контрактом ознакомлен(а)</label></br>
+                <label><button  type ="submit "> Сохранить </button ><br/></label>
+                </body>
+                
+          </main>
       <aside>
         <div class="menu" style="float:rigth">
           <span>Меню</span>
-          <p><a href="#zadanie2"> Ссылки </a></p> <p><a href="#table"> Таблица </a></p><p> <a href="#form"> Форма </a></p><p> <a href="#footer"> Подвал </a></p><p></div>
+          <a href="#zadanie2"> Ссылки </a><a href="#table"> Таблица </a> <a href="#form"> Форма </a> <a href="#footer"> Подвал </a></div>
           </div>
       </aside>
     </div>
+  <footer id="footer">(с) dyakonenkodaria</footer>
   </body>
-
 </html> 
