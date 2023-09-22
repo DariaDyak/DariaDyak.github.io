@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
-    <title>Flex Box</title>
-    <style1>
-        <body>
+    <title>Zadanie 3</title>
+    <style>
+#main-aside-wrapper {
+  flex-direction: row; /*строки слева направо*/
+  display: flex; /*для блокового отображения*/
+}
+#main-aside-wrapper main, 
+#main-aside-wrapper aside {
+  background-color: #ddd;
+  margin: 5px;
+  padding: 20px;
+}
+#main-aside-wrapper aside {
+  flex: 1;
+  order: 1;/*порядок*/
+}
+#main-aside-wrapper main {
+  flex: 2;
+  order: 2;
+}
+   </style>
+  </head>
+<body>
+   <header class="header" id="top">
+     <div id="headcont">
+       
+       <img style="float:left; margin:5px; width:100px; height:100px;" src="https://static.rustore.ru/apk/1816534207/content/ICON/d289ec11-2dde-4b64-92df-88dd36f4457b.jpg" alt="logo" />
+       <h3><div style="background-color:#ddd; padding:10px;">Разработка пользовательского WEB-интерфейса</div></h3>
+     </div>
+   </header>
+
+
     <div id="main-aside-wrapper">
       <main>
         <h1>Главный контент</h1>
         <p>Вторая строка</p>
       </main>
-      <aside>Сайдбар</aside>
+      <aside>
+        <div class="menu" style="float:rigth">
+          <span>Меню</span>
+          <a href="#zadanie2"> Ссылки </a> <a href="#table"> Таблица </a> <a href="#form"> Форма </a> <a href="#footer"> Подвал </a></div>
+          </div>
+      </aside>
     </div>
   </body>
-</style1>
-  </head>
+
 </html> 
