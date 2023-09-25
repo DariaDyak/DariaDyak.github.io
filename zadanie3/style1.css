@@ -18,6 +18,13 @@
   flex: 1;
   order: 2;
 }
+ header 
+  {
+    background-color: #ccc;
+    padding: 10px;
+    height: 100px;
+  }
+
 footer {
     background-color: #ccc;
     height: 25px;
