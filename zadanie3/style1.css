@@ -1,12 +1,4 @@
-
-#main-aside-wrapper {
-  flex-direction: row; /*строки слева направо*/
-  display: flex; /*для блокового отображения*/
-}
-#main-aside-wrapper main, 
-#main-aside-wrapper aside {
-  background-color: #ddd;
-  margin: 5px;body 
+body 
   {
     margin: 0;
   }
@@ -73,56 +65,3 @@
     background-color: #c5b5ff;
     color: #000000;
   }
-  padding: 20px;
-}
-#main-aside-wrapper aside {
- 
-  flex-wrap: wrap;
-}
-#main-aside-wrapper main {
-  flex: 1;
-  order: 2;
-}
- header 
-  {
-    background-color: #ccc;
-    padding: 10px;
-    height: 100px;
-  }
-
-footer {
-    background-color: #ccc;
-    height: 25px;
-    padding: 10px;
-    text-align: left;
-  }
-  th, td {
-    padding: 5px;
-    text-align: center;
-  }
-  
-  th {
-      font-size: 16px;
-      text-align: center;
-      background-color: #cd98ed;
-      color: #000000;
-    }
-  
-  tr:nth-child(even) {
-    font-size: 16px;
-    text-align: center;
-    background-color: #ae9afa;
-    color: #000000;
-  }
-  
-  tr:nth-child(odd) {
-    font-size: 16px;
-    text-align: center;
-    background-color: #c5b5ff;
-    color: #000000;
-  }
-@media screen and (min-width: 800px) {
-  #main-aside-wrapper {
-    flex-direction: row;
-  }
-}
