@@ -10,7 +10,6 @@
   padding: 20px;
 }
 #main-aside-wrapper aside {
-  flex: 0;
  
   flex-wrap: wrap;
 }
