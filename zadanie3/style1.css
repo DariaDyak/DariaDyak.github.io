@@ -1,4 +1,4 @@
- <style>
+
 #main-aside-wrapper {
   flex-direction: row; /*строки слева направо*/
   display: flex; /*для блокового отображения*/
@@ -49,9 +49,8 @@ footer {
     background-color: #c5b5ff;
     color: #000000;
   }
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
   #main-aside-wrapper {
     flex-direction: row;
   }
 }
-   </style>
