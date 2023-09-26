@@ -1,67 +1,100 @@
-body 
-  {
-    margin: 0;
-  }
-  
-  header 
-  {
-    background-color: #ccc;
-    padding: 10px;
-    height: 100px;
-  }
+body {
+  margin: 0;
+}
 
-  .menu 
+header {
+  background-color: #ccc;
+  padding: 5px;
+  height: 100px;
+ 
+}
+menu1{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.telo {
+  max-width: 800px;
+  background-color:  #f7eded;
+  margin: 0 auto;
+  margin-top: 0px;
+  padding: 10px;
+}
+
+footer {
+  background-color:#ccc;
+  padding: 10px;
+  height: 25px;
+  text-align: left;
+
+}
+
+th, td {
+  padding: 5px;
+    text-align: center;
+}
+
+th {
+  font-size: 16px;
+  text-align: center;
+  background-color: #cd98ed;
+  color: #000000;
+}
+
+tr:nth-child(even) {
+font-size: 16px;
+text-align: center;
+background-color: #ae9afa;
+color: #000000;
+}
+
+tr:nth-child(odd) {
+font-size: 16px;
+text-align: center;
+background-color: #c5b5ff;
+color: #000000;
+}
+
+
+@media (max-width: 800px){
+  .telo
   {
-    position: absolute;
-    top: 0;
-    right: 0;
+  display: flex;
+  flex-direction: column;
   }
-  .menu a {
-    margin-right: 10px;
+  .menu1{
+  background-color: #ccc;
+  order: 1;
+  display: flex;
+  flex-direction: column;
   }
-  
-  .name {
-    background-color: #ccc;
-    padding: 10px;
+  .table {
+  order: 2;
   }
-  
-  .telo {
-    max-width: 1000px;
-    background-color: #f7eded;
-    margin: 0 auto;
-    margin-top: 0px;
-    padding: 10px;
+  .zadanie3 {
+  order: 3;
   }
-  
-  footer {
-    background-color: #ccc;
-    height: 25px;
-    padding: 10px;
-    text-align: left;
+  .form{
+  order:4;
   }
-  
-  th, td {
-    padding: 5px;
-    text-align: left;
+  #nav{
+  flex-direction:column;
   }
-  
-  th {
-      font-size: 16px;
-      text-align: center;
-      background-color: #cd98ed;
-      color: #000000;
+}
+
+@media (min-width: 800px) {
+  .telo{
+  max-width: 900px;
+  }
+  #nav {
+  flex-direction: row;
+  }
+  .menu1 {
+      margin-right: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
-  
-  tr:nth-child(even) {
-    font-size: 16px;
-    text-align: center;
-    background-color: #ae9afa;
-    color: #000000;
-  }
-  
-  tr:nth-child(odd) {
-    font-size: 16px;
-    text-align: center;
-    background-color: #c5b5ff;
-    color: #000000;
-  }
+    
+}
+
