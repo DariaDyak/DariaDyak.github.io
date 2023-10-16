@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zadanie6</title>
+</head>
+<body>
+  <h1>Калькулятор</h1>
+  <label for="товар">Выберите товар:</label>
+  <select id="товар" onchange="chooset(this.selectedIndex)">
+    <option selected>Выберите товар</option>
+    <option>Розетка Schneider Electric</option>
+    <option>Беспроводной звонок InHome</option>
+    <option>Дюбель-хомут TPlast(уп)</option>
+    <option>Лампочка GX53 12w </option>
+    <option>Светильник Ecola</option>
+    <option>Светодиодная лента Feron 19w(1м)</option>
+  </select>
+  <label for="kolvo">Укажите количество:</label>
+  <input type="number" id="kolvo">
+  <button id="shet">Подсчитать стоимость</button>
+  <div id="rez"></div>
+  <h1>Калькулятор стоимости услуги (Детейлинг)</h1>
+      <label for="kol">Введите количество машин, на которые будут распространяться услуги:</label>
+      <input type="n" id="kol" value="1"><br/><br/><br/>
+      <label for="usluga">Выберите тип услуги:</label><br/>
+      <input type="radio" name="usluga" value="u1" onchange="schet()"> 1. Предпродажная подготовка<br/>
+      <input type="radio" name="usluga" value="u2" onchange="schet()"> 2. Обработка стекол<br/>
+      <input type="radio" name="usluga" value="u3" onchange="schet()"> 3. Покрытие автомобиля керамическим жидким стеклом<br/><br/><br/>
+      <div id="options" style="display: none;">
+          <label for="option">Выберите опцию товара:</label><br/>
+          <select id="option" onchange="schet()">
+              <option value="o1">Антидождь на лобовое стекло</option>
+              <option value="o2">Антидождь на переднюю "полусферу"</option>
+              <option value="o3">Антидождь на все стекла</option>
+              <option value="o4">Антидождь на все стекла (бизнес-класс)</option>
+          </select><br/><br/>
+      </div>
+      <div id="svva">
+          <label for="svva">Выберите свойство товара:</label><br/>
+          <input type="checkbox" id="checkbox" name="checkbox" onchange="schet()">С использованием воска<br/><br/><br/>
+      </div>
+  <div id="rez1"></div>
+  <script src="script.js"></script>
+</body>
+</html>
