@@ -6,7 +6,7 @@ body{
 @media (max-width:560px) {
     .slider{
         text-align: center;
-        top: 40vh;
+        top: 45vh;
         height: 30vh;
         width: 80vw;
         
@@ -24,7 +24,7 @@ body{
 @media (min-width:560px) {
     .slider{
         text-align: center;
-        top: 20vh;
+        top: 25vh;
         height: 30vh;
         width: 80vw;
         max-width: 960px;
