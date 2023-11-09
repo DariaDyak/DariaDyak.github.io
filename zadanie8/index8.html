@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Zadanie8</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style8_8_8.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+    <script src="script_8_8_8.js" ></script>
+  </head>
+    <body>
+	<button class="myButton">Открыть форму</button>
+    <form id="myForm" action="https://api.slapform.com/5HlkmCcWYe">
+		<h2>Задание 8</h2>
+		<div id="info">
+		  <div class="pole">Имя:<input type="text" id="name_polz" size="50" ></div>
+		  <div class="pole">Телефон:<input type="tel" name="phone" id="num" size="50"></div>
+          <div class="pole">Организация:<input type="text" name="organis" id="txt" size="50"></div>
+		  <div class="pole">Email:<input type="email" id="email_polz" size="50"></div>
+		  <div class="pole">Комментарии:<textarea name="mess" id="mes" cols="47" rows="3"></textarea></div>
+          <div class="pole"><input id="check" type="checkbox">Согласие на обработку персональных данных</div>
+          <div id="slide">
+				<button type="submit" id="nazad" onclick="return openHome()">Назад</button>
+				<button type="submit" id="otpr" disabled>Отправить</button>
+          </div>
+		</div>
+        <div id="my"></div>
+    </form>
+</body>
+</html>
