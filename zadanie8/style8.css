@@ -2,17 +2,17 @@ body{
 	
 	display: flex;
 	justify-content: center;
-	background-color: fffefe;
+	background-color: #fff;
 }
 
 .myButton{
-	height: 10px;
-	width: 100px;
+	
+	height: 5vh;
+	width: 15vw;
 	max-width: 200px;
 	min-width: 100px;
 	min-height: 40px;
-	background-color: fffefe;
-	
+	font-size: 16px;
 }
 
 textarea{
@@ -22,7 +22,7 @@ textarea{
 #slide{
 	display: flex;
 	justify-content: space-around;
-	margin-top: 10px;
+	margin-top: 5vh;
 
 }
 
@@ -34,7 +34,7 @@ textarea{
 		min-height: 480px;
 		padding: 18px 9px;
 		
-		background: #fffefe;
+		
 		position: fixed;
 		top: 0; left: 0; right: 0; bottom: 0;
 		margin: auto;
@@ -59,8 +59,9 @@ textarea{
 		max-width: 380px;
 		height: 80vh;
 		max-height: 480px;
+		
 		padding: 5px 9px;
-		background: #fffefe;
+	
 		position: fixed;
 		top: 0; left: 0; right: 0; bottom: 0;
 		margin: auto;
@@ -71,8 +72,9 @@ textarea{
 		
 	}
 	
-	#email,#mes,#name,#num,#txt{
+	#email_polz,#mes,#name_polz,#num,#txt{
 		max-width: 60vw;
+	
 	}
 	.pole{
 		margin-top: 2vh;
@@ -84,7 +86,7 @@ textarea{
 #my {
 	z-index: 0;
     position: fixed;
-    
+    background: rgba(0,0,0,.7);
     height: 100%;
     cursor: pointer;
     display: none;
