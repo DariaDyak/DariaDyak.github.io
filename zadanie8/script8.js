@@ -23,7 +23,7 @@ $(document).ready(function () {
           
             if (!telRegex.test(tel) || !emailRegex.test(email)) {
               event.preventDefault(); 
-              alert("Пожалуйста, введите корректный номер телефона и email");
+              alert("Пожалуйста, введите корректные данные");
             }
           });
         if (localStorage.getItem("name").length > 0) {
